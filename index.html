@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/a6e85834e3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <div id="login-form">
+                <img src="images/Screenshot%20(1605).png"/>
+                <h2>Login</h2>
+                <p>Welcome back!</p>
+    
+                    <form>
+                        <div class="container">
+                            <input type="text" id="usernameInput" placeholder="Username"><br/>
+                            <i class="icon fa-solid fa-user"></i>
+                        </div>
+                        <br>
+                        <div class="container">
+                            <input type="password" id="passwordInput" placeholder="password">
+                            <i class="icon fa-solid fa-lock"></i>
+                        </div>
+                        <br/><br/>
+                        <a href="#" id="forgotPass" onclick="forgotPassword()">Forgot password?</a>
+                        <br/><br/>
+                        <a href="#" onclick="verifyUser()">Log in</a>
+                        <br/><br/>
+                        <br/><br/>
+                        <p id="message"></p>
+                        
+                    </form>
+            </div>
+        
+        <script>
+        function forgotPassword(){
+            document.getElementById("message").innerHTML = "Password Hint: Your birthday"
+        }
+            
+        function verifyUser(){
+            var username = document.getElementById("usernameInput").value;
+            var password = document.getElementById("passwordInput").value;
+            
+            checkUserCreds(username, password);
+        }
+        
+        function checkUserCreds(username, password){
+            var systemUsername = "MrApple";
+            var systemPassword = "250205";
+            
+            if(username == systemUsername && password == systemPassword){
+                document.getElementById("message").innerHTML = "Correct. Loggin you in...";
+            }     
+            else{
+                 document.getElementById("message").innerHTML = "Username or password is incorrect!";
+            }
+        }
+    </script>
+    </body>
+</html>

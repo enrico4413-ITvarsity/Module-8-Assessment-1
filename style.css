@@ -1,0 +1,77 @@
+html{
+    background-image:url('images/wp4795301-virus-computer-wallpapers.png');
+}
+body{
+    color:white;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+
+#login-form{
+    background-color:#373737;
+    width:40%;
+    height:400px;
+    display:block;
+    margin:auto;
+    margin-top:200px;
+    padding:50px;
+    border:5px outset green;
+}
+
+                                            /* Text styles*/
+h2{
+    font-size:40px;
+}
+p{
+    font-size:20px;
+    margin-top:-25px;
+}
+#forgotPass{
+    color:darkgray;
+}
+
+#message p{
+    top:60px;
+    font-size:20px;
+    
+}
+                                            /*Image Styes*/
+#login-form img{
+    float:left;
+    height:400px;
+}
+
+                                            /*container*/
+.container {
+  position: relative;
+}
+
+.container input{
+    padding-left: 30px;
+    width:320px;
+    height:35px;
+}
+
+.container .icon {
+    position: absolute;
+    top: 50%;
+    left:405px;  
+    transform: translateY(-50%);
+    color: #555;
+    padding:2px;
+}
+                                                /*Links*/
+a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    padding-top:30px;
+    
+}
+
+a:hover{
+    color:green;
+}
